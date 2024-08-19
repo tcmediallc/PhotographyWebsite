@@ -113,10 +113,6 @@ body {
     animation: scrollUp 25s linear infinite;
 }
 
-.item:hover {
-    scale: 1.05;
-}
-
 .item1 {
     animation-delay: calc((25s / 6) * (4) * -1);
 }
@@ -135,4 +131,78 @@ body {
 
 .item5 {
     animation-delay: calc((25s / 6) * (0) * -1);
+}
+
+@media only screen and (max-width: 450px) {
+    .section {
+        display: block;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .left {
+        height: 30vh;
+    }
+
+    .left h1 {
+        font-size: xxx-large;
+    }
+
+    .left h3 {
+        font-size: x-large;
+    }
+
+    .left button {
+        width: 50%;
+    }
+
+    .left {
+        height: fit-content;
+        padding: 25px;
+    }
+
+    .photoHolder img {
+        width: 300px;
+    }
+
+    .photoHolder {
+        height: 100vh;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    @keyframes scrollRight {
+        to {
+            left: -350px;
+        }
+    }
+
+    .item {
+        top: 0%;
+        left: 100%;
+        animation: scrollRight 20s linear infinite;
+    }
+
+    .item1 {
+        animation-delay: calc((20s / 4) * (4) * -1);
+    }
+    
+    .item2 {
+        animation-delay: calc((20s / 4) * (4) * -1);
+    }
+    
+    .item3 {
+        animation-delay: calc((20s / 4) * (2) * -1);
+    }
+    
+    .item4 {
+        animation-delay: calc((20s / 4) * (2) * -1);
+    }
+    
+    .item5 {
+        animation-delay: calc((20s / 4) * (0) * -1);
+    }
 }
